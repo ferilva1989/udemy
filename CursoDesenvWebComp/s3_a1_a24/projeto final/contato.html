@@ -2,62 +2,63 @@
 Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o vídeo, esse site foi estruturado utilizando table, mas não é a recomendação para desenvolvimento de sites profissionais, só utilizei nesse projeto para testar os conhecimentos já adquiridos até o momento no curso, mais adiante iremos criar sites mais profissionais utilizando html e css.
 -->
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>UNES - contato</title>
-		<meta charset="utf-8">
-	</head>
+<html lang="pt-br">
 
-	<body background="imagens/fundo2.png">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UNES - contato</title>
+</head>
 
-		<table border="0" width="900" align="center">
-			
-			<tr>
-				<td height="89"><img src="imagens/logo.png"> </td>
-				<td align="right">
-					<a href="index.html">Home</a> |
-					<a href="quem-somos.html">Quem somos</a> |
-					<a href="contato.html">Contato</a> 
-				</td>
-			</tr>
+<body background="imagens/fundo2.png">
 
-			<tr>
-				<td colspan="2">
-					
-					<h2>Entre em contato</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl. 
-					</p>
+	<table border="0" width="900" align="center">
 
-					<hr>
+		<tr>
+			<td height="89"><img src="imagens/logo.png" title="logo"> </td>
+			<td align="right">
+				<a href="index.html">Home</a> |
+				<a href="quem-somos.html">Quem somos</a> |
+				<a href="contato.html">Contato</a>
+			</td>
+		</tr>
 
-					<form>
-						
-						Seu e-mail: <br>
-						<input type="text" name="email"><br>
+		<tr>
+			<td colspan="2">
 
-						Assunto: <br>
-						<input type="text" name="assunto"><br>
+				<h2>Entre em contato</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl.
+				</p>
 
-						Descrição: <br>
-						<textarea></textarea><br>
+				<hr>
 
-						<input type="submit" value="Enviar">
+				<form>
 
-					</form>
+					<label for="email">Seu e-mail:</label> <br>
+					<input type="text" name="email" id="email"><br>
 
+					<label for="assunto">Assunto: </label> <br>
+					<input type="text" name="assunto" id="assunto"><br>
 
-				</td>
-			</tr>
+					<label for="texto">Descrição:</label> <br>
+					<textarea id="texto"></textarea> <br>
 
-			<tr>
-				<td colspan="2" align="center">
-					<h4>Todos os direitos reservados</h4>
-				</td>
-			</tr>
+					<input type="submit" value="Enviar">
 
-		</table>
+				</form>
 
-	</body>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" align="center">
+				<h4>Todos os direitos reservados</h4>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
 
 </html>
