@@ -11,52 +11,80 @@ Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o ví
 </head>
 
 <body background="imagens/fundo2.png">
+	<table border="3" width="900" align="center">
+		<!--
+			O Elemento HTML <caption> (ou Elemento HTML Subtitulo de Tabela) representa o título de uma tabela.
+			Embora ele seja sempre o primeiro filho de um <table>, seu estilo,usando CSS pode colocar ele em qualquer lugar relativo a tabela.
+		-->
+		<caption>Exemplo de título</caption>
+		<!--
+			O elemento HTML <colgroup> define um grupo de colunas dentro de uma tabela.
+		-->
+		<colgroup>
+			<!--
+				O elemento HTML <col> define uma coluna dentro de uma tabela e é usado para definir a semântica comum em todas as células comuns.
+				Geralmente é encontrado dentro de um elemento <colgroup>.
+			-->
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<!--
+			O elemento HTML <tbody> encapsula um conjunto de linhas da tabela (elementos <tr>), indicando que elas compõem o corpo da tabela (<table>).
+		-->
+		<tbody>
+			<tr>
+				<td height="89">
+					<img src="imagens/logo.png" alt="">
+				</td>
+				<!--
+					O elemento HTML <thead> define um conjunto de linhas definindo o cabeçalho das colunas da tabela.
+				-->
+				<thead>
+					<!--
+						O elemento HTML <th> define uma célula como cabeçalho de um grupo de células da tabela.
+						A natureza exata desse grupo é definida pelos atributos scope e headers.
+					-->
+					<th align="right">Teste</th>
+				</thead>
+				<td align="right">
+					<a href="index.html">Home</a> |
+					<a href="quem-somos.html">Quem somos</a> |
+					<a href="contato.html">Contato</a>
+				</td>
+			</tr>
 
-	<table border="0" width="900" align="center">
+			<tr>
+				<td colspan="2">
+					<h2>Entre em contato</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl.
+					</p>
+					<!--
+						O elemento HTML <hr> representa uma quebra temática entre elementos de nível de parágrafo:
+						por exemplo, uma mudança de cena em uma história ou uma mudança de tópico dentro de uma seção.
+					-->
+					<hr>
+					<form>
+						<label for="email">Seu e-mail:</label><br>
+						<input type="text" name="email" id="email"><br>
+						<label for="assunto">Assunto:</label><br>
+						<input type="text" name="assunto" id="assunto"><br>
+						<label for="descricao">Descrição:</label><br>
+						<textarea id="descricao"></textarea><br>
 
-		<tr>
-			<td height="89"><img src="imagens/logo.png" alt=""> </td>
-			<td align="right">
-				<a href="index.html">Home</a> |
-				<a href="quem-somos.html">Quem somos</a> |
-				<a href="contato.html">Contato</a>
-			</td>
-		</tr>
-
-		<tr>
-			<td colspan="2">
-
-				<h2>Entre em contato</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl.
-				</p>
-
-				<hr>
-
-				<form>
-
-					<label for="email">Seu e-mail:</label><br>
-					<input type="text" name="email" id="email"><br>
-
-					<label for="assunto">Assunto:</label><br>
-					<input type="text" name="assunto" id="assunto"><br>
-
-					<label for="descricao">Descrição:</label><br>
-					<textarea id="descricao"></textarea><br>
-
-					<input type="submit" value="Enviar">
-
-				</form>
-
-			</td>
-		</tr>
-
-		<tr>
-			<td colspan="2" align="center">
-				<h4>Todos os direitos reservados</h4>
-			</td>
-		</tr>
-
+						<input type="submit" value="Enviar">
+					</form>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2" align="center">
+					<h4>Todos os direitos reservados</h4>
+				</td>
+			</tr>
+		</tfoot>
 	</table>
 
 </body>

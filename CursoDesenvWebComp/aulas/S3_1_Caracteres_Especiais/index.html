@@ -1,18 +1,96 @@
+<!--
+	O propósito do DOCTYPE é evitar que o browser mude para os chamados “quirks mode” quando renderizar um documento;
+	isto é, o DOCTYPE garante que o browser faça um esforço na tentativa de seguir as especificações relevantes,
+	em vez de usar um modo de renderização diferente e que seja incompatível com algumas especificações.
+-->
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<!--
+	O elemento HTML <html> (ou HTML root element) representa a raiz de um HTML ou XHTML documento.
+	Todos os outros elementos devem ser descendentes desse elemento.
+-->
+<html lang="pt-br" version="1.0">
+<!--
+	O elemento HTML <head> providencia informações gerais (metadados) sobre o documento,
+	incluindo seu título e links para scripts e folhas de estilos.
+-->
 
 <head>
+	<!--
+		O elemento HTML <meta> define qualquer informação de metadados que não podem ser definidos
+		por outros elementos HTML. (<base>, <link>, <script>, <style> ou <title>).
+	-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--
+		O elemento HTML <title> (Elemento HTML Título) define o título do documento,
+		mostrado na barra de título de um navegador ou na aba da página. Pode conter somente texto e
+		quaisquer marcações contidas no texto não são interpretadas.
+	-->
 	<title>Meu site</title>
 </head>
+<!--
+	O elemento <body> do HTML representa o conteúdo de um documento HTML.
+	É permitido apenas um <body> por documento.
+-->
 
 <body>
+	<!--
+		O elemento HTML <hgroup> destina-se a agrupar cabeçalhos de diferentes níveis para uma seção do documento.
+		Ele agrupa (é um container para) um conjunto de elementos <h1>–<h6>.
+	-->
+	<hgroup id="document-title">
+		<!--
+			Os elementos HTML <h1>–<h6> representam seis níveis de título de seção.
+			<h1> é o nível de seção mais alto e <h6> é o mais baixo.
+		-->
+		<h1>HTML</h1>
+		<h2>Living Standard — Last Updated 12 August 2016</h2>
+	</hgroup>
 
 	<h2>Caracteres especiais</h2>
-
 	home - quem somos - contato
+	<!--
+		O elemento de nível superior em MathML é <math>. Cada instância válida de MathML deve ser encapsulada
+		em tags <math>. Além disso, você não deve aninhar um segundo elemento <math> em outro, mas pode ter
+		um número arbitrário de outros elementos filho nele.
+	-->
+	<math>
+
+		<mstyle displaystyle="true" mathcolor="teal">
+			<mrow>
+
+				<munderover>
+					<mo stretchy="true" form="prefix">&sum;</mo>
+					<mrow>
+						<mi>i</mi>
+						<mo form="infix">=</mo>
+						<mn>1</mn>
+					</mrow>
+					<mi>n</mi>
+				</munderover>
+
+				<mstyle displaystyle="true">
+					<mfrac>
+						<mn>1</mn>
+						<mi>n</mi>
+					</mfrac>
+				</mstyle>
+
+			</mrow>
+		</mstyle>
+
+	</math>
+	<!--
+		Gráficos Vetoriais Escaláveis (SVG) é uma linguagem de marcação XML para descrever gráficos
+		vetoriais bidimensionais. Essencialmente, SVG é para gráficos o que o XHTML é para texto.
+	-->
+	<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+		<circle cx="50" cy="50" r="40" />
+		<circle cx="150" cy="50" r="4" />
+		<svg viewBox="0 0 10 10" x="200" width="100">
+			<circle cx="5" cy="5" r="4" />
+		</svg>
+	</svg>
 
 </body>
 
