@@ -2,11 +2,12 @@
 Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o vídeo, esse site foi estruturado utilizando table, mas não é a recomendação para desenvolvimento de sites profissionais, só utilizei nesse projeto para testar os conhecimentos já adquiridos até o momento no curso, mais adiante iremos criar sites mais profissionais utilizando html e css.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>UNES - contato</title>
-	<meta charset="utf-8">
 </head>
 
 <body background="imagens/fundo2.png">
@@ -34,19 +35,18 @@ Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o ví
 
 				<form>
 
-					Seu e-mail: <br>
-					<input type="text" name="email"><br>
+					<label for="email">Seu e-mail:</label><br>
+					<input type="text" name="email" id="email"><br>
 
-					Assunto: <br>
-					<input type="text" name="assunto"><br>
+					<label for="assunto">Assunto:</label><br>
+					<input type="text" name="assunto" id="assunto"><br>
 
-					Descrição: <br>
-					<textarea></textarea><br>
+					<label for="descricao">Descrição:</label><br>
+					<textarea id="descricao"></textarea><br>
 
 					<input type="submit" value="Enviar">
 
 				</form>
-
 
 			</td>
 		</tr>
