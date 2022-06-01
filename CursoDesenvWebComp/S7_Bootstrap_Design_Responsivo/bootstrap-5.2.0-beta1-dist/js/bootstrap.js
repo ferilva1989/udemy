@@ -1,17 +1,22 @@
 /*!
-  * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
-  * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-  */
+ * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
-  typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
-})(this, (function (Popper) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
+})(this, (function (Popper) {
+  'use strict';
 
   function _interopNamespace(e) {
     if (e && e.__esModule) return e;
-    const n = Object.create(null, { [Symbol.toStringTag]: { value: 'Module' } });
+    const n = Object.create(null, {
+      [Symbol.toStringTag]: {
+        value: 'Module'
+      }
+    });
     if (e) {
       for (const k in e) {
         if (k !== 'default') {
@@ -27,7 +32,7 @@
     return Object.freeze(n);
   }
 
-  const Popper__namespace = /*#__PURE__*/_interopNamespace(Popper);
+  const Popper__namespace = /*#__PURE__*/ _interopNamespace(Popper);
 
   /**
    * --------------------------------------------------------------------------
@@ -397,8 +402,8 @@
       const domElements = element.querySelectorAll(selector);
 
       for (let {
-        target
-      } = event; target && target !== this; target = target.parentNode) {
+          target
+        } = event; target && target !== this; target = target.parentNode) {
         for (const domElement of domElements) {
           if (domElement !== target) {
             continue;
@@ -771,7 +776,8 @@
     _mergeConfigObj(config, element) {
       const jsonConfig = isElement(element) ? Manipulator.getDataAttribute(element, 'config') : {}; // try to parse
 
-      return { ...this.constructor.Default,
+      return {
+        ...this.constructor.Default,
         ...(typeof jsonConfig === 'object' ? jsonConfig : {}),
         ...(isElement(element) ? Manipulator.getDataAttributes(element) : {}),
         ...(typeof config === 'object' ? config : {})
@@ -2282,7 +2288,8 @@
         }];
       }
 
-      return { ...defaultBsPopperConfig,
+      return {
+        ...defaultBsPopperConfig,
         ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
@@ -3505,6 +3512,7 @@
     u: [],
     ul: []
   };
+
   function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
     if (!unsafeHtml.length) {
       return unsafeHtml;
@@ -3608,7 +3616,8 @@
     changeContent(content) {
       this._checkContent(content);
 
-      this._config.content = { ...this._config.content,
+      this._config.content = {
+        ...this._config.content,
         ...content
       };
       return this;
@@ -4034,7 +4043,8 @@
       if (this._templateFactory) {
         this._templateFactory.changeContent(content);
       } else {
-        this._templateFactory = new TemplateFactory({ ...this._config,
+        this._templateFactory = new TemplateFactory({
+          ...this._config,
           // the `content` var has to be after `this._config`
           // to override config.content in case of popover
           content,
@@ -4128,7 +4138,8 @@
           }
         }]
       };
-      return { ...defaultBsPopperConfig,
+      return {
+        ...defaultBsPopperConfig,
         ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
@@ -4168,7 +4179,8 @@
       EventHandler.on(this._element.closest(SELECTOR_MODAL), EVENT_MODAL_HIDE, this._hideModalHandler);
 
       if (this._config.selector) {
-        this._config = { ...this._config,
+        this._config = {
+          ...this._config,
           trigger: 'manual',
           selector: ''
         };
@@ -4238,7 +4250,8 @@
         }
       }
 
-      config = { ...dataAttributes,
+      config = {
+        ...dataAttributes,
         ...(typeof config === 'object' && config ? config : {})
       };
       config = this._mergeConfigObj(config);
@@ -4334,14 +4347,16 @@
   const NAME$3 = 'popover';
   const SELECTOR_TITLE = '.popover-header';
   const SELECTOR_CONTENT = '.popover-body';
-  const Default$2 = { ...Tooltip.Default,
+  const Default$2 = {
+    ...Tooltip.Default,
     placement: 'right',
     offset: [0, 8],
     trigger: 'click',
     content: '',
     template: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div>' + '</div>'
   };
-  const DefaultType$2 = { ...Tooltip.DefaultType,
+  const DefaultType$2 = {
+    ...Tooltip.DefaultType,
     content: '(null|string|element|function)'
   };
   /**
