@@ -1,2 +1,0 @@
-# udemy
-Rep estudos desenvolvimento
