@@ -5,24 +5,26 @@
 
 /* Layout
 -----------------------------*/
-html, body, #home {
+html,
+body,
+#home {
 	height: 100%;
 	overflow-x: hidden;
 }
 
 body {
 	background: url(../imagens/capa.png),
-				url(../imagens/ruido.png),
-				linear-gradient(50deg,#ff4169,#7c26f8);
+		url(../imagens/ruido.png),
+		linear-gradient(50deg, #ff4169, #7c26f8);
 	background-attachment: fixed;
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Barra de navegação
 -----------------------------*/
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -34,8 +36,8 @@ nav.navbar-transparente {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(255,255,255,.5);
-    border-color: rgba(255,255,255,0.5);
+	color: rgba(255, 255, 255, .5);
+	border-color: rgba(255, 255, 255, 0.5);
 }
 
 .divisor {
@@ -54,10 +56,10 @@ nav.navbar-transparente {
 	color: white;
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
-    padding: 10px 20px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	padding: 10px 20px;
 }
 
 .btn-roxo {
@@ -78,7 +80,8 @@ nav.navbar-transparente {
 	color: black;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
 	width: 5%;
 }
 
@@ -97,7 +100,8 @@ nav.navbar-transparente {
 	color: white;
 }
 
-#servicos h2, h3 {
+#servicos h2,
+h3 {
 	color: #7c25f8;
 }
 
@@ -114,9 +118,11 @@ nav.navbar-transparente {
 }
 
 .rotacionar {
-	-ms-transform: rotate(30deg); /* IE 9 */
-    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
-    transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	/* IE 9 */
+	-webkit-transform: rotate(30deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(30deg);
 	padding-left: 80px;
 }
 
@@ -189,6 +195,7 @@ h3 {
 	h1 {
 		font-size: 3em;
 	}
+
 	.btn-custom {
 		margin: 10px 15px;
 	}
@@ -214,5 +221,3 @@ h3 {
 		font-size: 6em;
 	}
 }
-
-
