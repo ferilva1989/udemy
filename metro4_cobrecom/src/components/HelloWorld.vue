@@ -8,6 +8,54 @@ defineProps({
 </script>
 
 <template>
+  <div class="container-fluid">
+    <div class="grid-style">
+      <div class="row">
+        <div class="cell-md-3">
+          <div>3</div>
+        </div>
+        <div class="cell-md-3">
+          <div>6</div>
+        </div>
+        <div class="cell-md-3">
+          <div>9</div>
+        </div>
+        <div class="cell-md-3">
+          <div>12</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell-md-3">
+          <div>1</div>
+        </div>
+        <div class="cell-md-3">
+          <div>2</div>
+        </div>
+        <div class="cell-md-3">
+          <div>3</div>
+        </div>
+        <div class="cell-md-3">
+          <div>4</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell-md-3">
+          <div>1</div>
+        </div>
+        <div class="cell-md-3">
+          <div>2</div>
+        </div>
+        <div class="cell-md-3">
+          <div>3</div>
+        </div>
+        <div class="cell-md-3">
+          <div>4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
   <div class="container-fluid start-screen h-100">
     <div class="tiles-area clear">
       <div class="tiles-grid tiles-group size-7 fg-white">
@@ -62,9 +110,14 @@ defineProps({
       </div>
     </div>
   </div>
+-->
 </template>
 
 <style scoped>
+div {
+  border: 1px solid red;
+}
+
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
