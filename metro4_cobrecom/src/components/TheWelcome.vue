@@ -8,7 +8,6 @@ import SupportIcon from "./icons/IconSupport.vue";
 </script>
 
 <template>
-  
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
@@ -33,7 +32,9 @@ import SupportIcon from "./icons/IconSupport.vue";
     <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>.
     If you need to test your components and web pages, check out
     <a href="https://www.cypress.io/" target="_blank">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank">Cypress Component Testing</a>.
+    <a href="https://on.cypress.io/component" target="_blank"
+      >Cypress Component Testing</a
+    >.
 
     <br />
 
@@ -51,9 +52,11 @@ import SupportIcon from "./icons/IconSupport.vue";
     <a target="_blank" href="https://router.vuejs.org/">Vue Router</a>,
     <a target="_blank" href="https://test-utils.vuejs.org/">Vue Test Utils</a>,
     and
-    <a target="_blank" href="https://github.com/vuejs/devtools">Vue Dev Tools</a>. If you need more resources, we
-    suggest paying
-    <a target="_blank" href="https://github.com/vuejs/awesome-vue">Awesome Vue</a>
+    <a target="_blank" href="https://github.com/vuejs/devtools">Vue Dev Tools</a
+    >. If you need more resources, we suggest paying
+    <a target="_blank" href="https://github.com/vuejs/awesome-vue"
+      >Awesome Vue</a
+    >
     a visit.
   </WelcomeItem>
 
@@ -66,8 +69,9 @@ import SupportIcon from "./icons/IconSupport.vue";
     Got stuck? Ask your question on
     <a target="_blank" href="https://chat.vuejs.org">Vue Land</a>, our official
     Discord server, or
-    <a target="_blank" href="https://stackoverflow.com/questions/tagged/vue.js">StackOverflow</a>. You should also
-    subscribe to
+    <a target="_blank" href="https://stackoverflow.com/questions/tagged/vue.js"
+      >StackOverflow</a
+    >. You should also subscribe to
     <a target="_blank" href="https://news.vuejs.org">our mailing list</a> and
     follow the official
     <a target="_blank" href="https://twitter.com/vuejs">@vuejs</a>
@@ -84,5 +88,4 @@ import SupportIcon from "./icons/IconSupport.vue";
     sustainability. You can help us by
     <a target="_blank" href="https://vuejs.org/sponsor/">becoming a sponsor</a>.
   </WelcomeItem>
-
 </template>
