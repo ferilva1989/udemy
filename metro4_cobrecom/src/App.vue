@@ -1,6 +1,5 @@
 <script setup>
 import { onMounted } from 'vue';
-//import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
 onMounted(() => {
   Metro.init();
@@ -12,16 +11,9 @@ onMounted(() => {
 
     <div class="wrapper">
       <HelloWorld msg="Aprender!" />
-      <!--
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      -->
     </div>
   </header>
 
-  <!--<RouterView />-->
 </template>
 
 <style>

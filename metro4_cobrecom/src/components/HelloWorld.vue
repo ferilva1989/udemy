@@ -115,7 +115,7 @@ defineProps({
 
 <style scoped>
 div {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 h1 {
