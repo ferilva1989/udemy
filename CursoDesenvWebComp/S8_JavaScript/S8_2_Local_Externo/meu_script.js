@@ -1,1 +1,1 @@
-alert("Olá, seja bem vindo ao curso!!!");
+alert('Olá, seja bem vindo ao curso!!!')
