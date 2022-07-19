@@ -1,0 +1,1 @@
+describe nome_tabela
